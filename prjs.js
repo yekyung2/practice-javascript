@@ -65,10 +65,37 @@
 // }
 
 // for문
-    var result;
-    var dan=2;
-    document.write("<h1>"+dan+"단</h1>");
-    for(var k=1; k<=10; k++){
-        result=k*dan;
-        document.write("2X"+k+"="+result+"<br>");
-    }
+    // var result;
+    // var dan=2;
+    // document.write("<h1>"+dan+"단</h1>");
+    // for(var k=1; k<=10; k++){
+    //     result=k*dan;
+    //     document.write("2X"+k+"="+result+"<br>");
+    // }
+
+    // 이중for문
+    // for (var k=2; k<=9; k++){
+    //     document.write("<h1>"+k+"단</h1><br>");
+    //     for (var m=1; m<=9; m++){
+    //     // 2 x 1 = 2,  k + "x" + m + "=" k*m
+    //     document.write(k+"x"+m+"="+(k*m)+"<br>");
+    //     }
+    // }
+
+    //break문
+    // for(var i=1; i<=10; i++){
+    //     document.write(i+"<br>");
+    //     if(i==5) break;
+    // }
+
+    // continue문
+    // for(var i=1; i<=10; i++){
+    //     if(i%2==1) continue;
+    //     document.write(i+"<br/>");
+    // }
+
+    // 객체의 생성 - new 연산자    
+    // var today=new Date();
+    // var todayy = today.getFullYear();
+    // document.write(todayy);
+    
