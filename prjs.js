@@ -1,4 +1,4 @@
-// 연습1
+// 2020.08.27-28 연습1
 //var result =confirm("Do you like javascript?");
 // var theText =result ? "good" : "No-good";
 // document.write(theText);
@@ -31,7 +31,7 @@
 //         areaNum="02";
 //         break;
 //     case "경기":
-//         areaNum="031";;
+//         areaNum="031";
 //         break;
 //     default:
 //         alert("sorry");
@@ -57,12 +57,12 @@
 
 // while문 연습
 // var i=10;
-
 // while(i>=1){
 //     if(i%2==0)
 //     document.write(i+"<br>");
 //     i--;
 // }
+
 
 // for문
     // var result;
@@ -72,6 +72,7 @@
     //     result=k*dan;
     //     document.write("2X"+k+"="+result+"<br>");
     // }
+ 
 
     // 이중for문
     // for (var k=2; k<=9; k++){
@@ -82,11 +83,13 @@
     //     }
     // }
 
+
     //break문
     // for(var i=1; i<=10; i++){
     //     document.write(i+"<br>");
     //     if(i==5) break;
     // }
+
 
     // continue문
     // for(var i=1; i<=10; i++){
@@ -94,8 +97,50 @@
     //     document.write(i+"<br/>");
     // }
 
+
     // 객체의 생성 - new 연산자    
     // var today=new Date();
     // var todayy = today.getFullYear();
     // document.write(todayy);
+
+
+
+    // 요일에 따라 이미지 출력하기
+    // var today = new Date();
+    // var nowDay = today.getDay();
+
+    // // document.write(nowDay)
+    // if(nowDay==5){
+    //     document.write("<img src="images/practice3.jpg" style= "width: 50%">");
+    // }else{
+    //         document.write('bye');
+    //     }
+    // 왜안됨...ㅠㅠ
+
+    // if(nowDay==1){
+    //     document.write('<img src="practice2.jpg" alt="월요일" />');
+    // }
+    // else if(nowDay==2){
+    //     document.write('<img src="images/practice3.jpg" alt="화요일" />');
+    // }
+    // else if(nowDay==3){
+    //     document.write('<img src="images/practice4.jpg" alt="수요일" />');
+    // }
+    // else if(nowDay==4){
+    //     document.write('<img src="images/practice5.jpg" alt="목요일" />');
+    // }
+    // else if(nowDay==5){
+    //     document.write('안녕 <img src="images/practice6.jpg"/>');
+    // }
+    // else if(nowDay==6){
+    //     document.write('<img src="images/practice7.jpg" alt="토요일" />');
+    // }
+    // else{
+    //     document.write('<img src="images/practice8.jpg" alt="일요일" />');
+    // }
+    // }
+
     
+// Math 객체 : 다른 내장 객체와 다르게 New(생성자 키워드)를 사용하지 않는 정적인 객체다.
+var maxNum = Math.max(30,70,5);
+document.write("최댓값"+ maxNum +"<br/>");
