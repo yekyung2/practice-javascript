@@ -142,5 +142,9 @@
 
     
 // Math 객체 : 다른 내장 객체와 다르게 New(생성자 키워드)를 사용하지 않는 정적인 객체다.
-var maxNum = Math.max(30,70,5);
-document.write("최댓값"+ maxNum +"<br/>");
+// var maxNum = Math.max(30,70,5);
+// document.write("최댓값"+ maxNum +"<br/>");
+
+var imgNum = Math.floor(Math.random()*7)+2;
+document.write("<img src='images/practice"+imgNum+".jpg' alt='랜덤이미지'/>");
+
