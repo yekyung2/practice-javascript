@@ -1,4 +1,4 @@
-// 2020.08.27-28 연습1
+// 2020.08.27-28 start 연습1
 //var result =confirm("Do you like javascript?");
 // var theText =result ? "good" : "No-good";
 // document.write(theText);
@@ -55,7 +55,7 @@
 //     }
 
 
-// while문 연습
+// 연습6 while문 연습
 // var i=10;
 // while(i>=1){
 //     if(i%2==0)
@@ -64,85 +64,85 @@
 // }
 
 
-// for문
-    // var result;
-    // var dan=2;
-    // document.write("<h1>"+dan+"단</h1>");
-    // for(var k=1; k<=10; k++){
-    //     result=k*dan;
-    //     document.write("2X"+k+"="+result+"<br>");
-    // }
+// 연습7 for문
+// var result;
+// var dan=2;
+// document.write("<h1>"+dan+"단</h1>");
+// for(var k=1; k<=10; k++){
+//     result=k*dan;
+//     document.write("2X"+k+"="+result+"<br>");
+// }
  
 
-    // 이중for문
-    // for (var k=2; k<=9; k++){
-    //     document.write("<h1>"+k+"단</h1><br>");
-    //     for (var m=1; m<=9; m++){
-    //     // 2 x 1 = 2,  k + "x" + m + "=" k*m
-    //     document.write(k+"x"+m+"="+(k*m)+"<br>");
-    //     }
-    // }
+// 연습8 이중for문
+// for (var k=2; k<=9; k++){
+//     document.write("<h1>"+k+"단</h1><br>");
+//     for (var m=1; m<=9; m++){
+//     // 2 x 1 = 2,  k + "x" + m + "=" k*m
+//     document.write(k+"x"+m+"="+(k*m)+"<br>");
+//     }
+// }
 
 
-    //break문
-    // for(var i=1; i<=10; i++){
-    //     document.write(i+"<br>");
-    //     if(i==5) break;
-    // }
+// 연습9 break문
+// for(var i=1; i<=10; i++){
+//     document.write(i+"<br>");
+//     if(i==5) break;
+// }
 
 
-    // continue문
-    // for(var i=1; i<=10; i++){
-    //     if(i%2==1) continue;
-    //     document.write(i+"<br/>");
-    // }
+// 연습10 continue문
+// for(var i=1; i<=10; i++){
+//     if(i%2==1) continue;
+//     document.write(i+"<br/>");
+// }
 
 
-    // 객체의 생성 - new 연산자    
-    // var today=new Date();
-    // var todayy = today.getFullYear();
-    // document.write(todayy);
+// 연습11 객체의 생성 - new 연산자    
+// var today=new Date();
+// var todayy = today.getFullYear();
+// document.write(todayy);
 
 
 
-    // 요일에 따라 이미지 출력하기
-    var today = new Date();
-    var nowDay = today.getDay();
+// 연습12 요일에 따라 이미지 출력하기
+// var today = new Date();
+// var nowDay = today.getDay();
 
-    document.write(nowDay)
-    if(nowDay==6){
-        document.write('<img src="images/practice3.jpg">');
-    }else{
-            document.write('bye');
-        }
+// document.write(nowDay)
+// if(nowDay==0){
+//    document.write('<img src="images/practice3.jpg">');
+// }else{
+//     document.write("");
+//     }
 
-    // 왜안됨...ㅠㅠ
+// 왜안됨...ㅠㅠ
 
-    // if(nowDay==1){
-    //     document.write('<img src="practice2.jpg" alt="월요일" />');
-    // }
-    // else if(nowDay==2){
-    //     document.write('<img src="images/practice3.jpg" alt="화요일" />');
-    // }
-    // else if(nowDay==3){
-    //     document.write('<img src="images/practice4.jpg" alt="수요일" />');
-    // }
-    // else if(nowDay==4){
-    //     document.write('<img src="images/practice5.jpg" alt="목요일" />');
-    // }
-    // else if(nowDay==5){
-    //     document.write('<img src="images/practice6.jpg"/>');
-    // }
-    // else if(nowDay==6){
-    //     document.write('<img src="images/practice7.jpg" alt="토요일" />');
-    // }
-    // else{
-    //     document.write('<img src="images/practice8.jpg" alt="일요일" />');
-    // }
-    // }
+// if(nowDay==1){
+//     document.write('<img src="practice2.jpg" alt="월요일" />');
+// }
+// else if(nowDay==2){
+//     document.write('<img src="images/practice3.jpg" alt="화요일" />');
+// }
+// else if(nowDay==3){
+//     document.write('<img src="images/practice4.jpg" alt="수요일" />');
+// }
+// else if(nowDay==4){
+//     document.write('<img src="images/practice5.jpg" alt="목요일" />');
+// }
+// else if(nowDay==5){
+//     document.write('<img src="images/practice6.jpg"/>');
+// }
+// else if(nowDay==6){
+//     document.write('<img src="images/practice7.jpg" alt="토요일" />');
+// }
+// else{
+//     document.write('<img src="images/practice8.jpg" alt="일요일" />');
+// }
+// }
 
     
-// Math 객체 : 다른 내장 객체와 다르게 New(생성자 키워드)를 사용하지 않는 정적인 객체다.
+// 연습13 Math 객체 : 다른 내장 객체와 다르게 New(생성자 키워드)를 사용하지 않는 정적인 객체다.
 // var maxNum = Math.max(30,70,5);
 // document.write("최댓값"+ maxNum +"<br/>");
 
@@ -165,4 +165,42 @@
 // 랜덤이미지 출력하기 practice.2-8사이의 이미지.
 // var imgNum = Math.floor(Math.random()*7)+2;
 // document.write("<img src='images/practice"+imgNum+".jpg' alt='랜덤이미지'/>");
+
+// 연습14
+// var theText = "Hi web js city";
+// theText = theText.bold();
+// document.write(theText);
+
+// theText = theText.length;
+// document.write(theText);
+
+// theText = theText.charAt(2);
+// document.write(theText);
+
+
+// 연습15
+// document.write("<h3>문자치환</h3>");
+// var theText1 = "img2_out.jpg";
+// theText1 = theText1.replace("out","over");
+// document.write(theText1+"<br />");
+
+
+// 연습16 Array 객체 생성 방법 (서랍장, 하나의 변수에 여러개의 데이터를 저장하는 방법)
+var days = ["일", "월", "화", "수", "목", "금", "토"];
+var today = new Date();
+var day= days[today.getDay()];
+document.write(day+"요일"+"<br />");
+
+// 전체 재산의 합 구하기
+var money=[100,200,300,400];
+var theLen = money.length;
+var total = 0;
+for(var i=0; i<theLen; i++){
+    total = total + money[i];
+}
+document.write(total+"만원<br />");
+
+
+
+
 
