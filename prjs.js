@@ -106,15 +106,16 @@
 
 
     // 요일에 따라 이미지 출력하기
-    // var today = new Date();
-    // var nowDay = today.getDay();
+    var today = new Date();
+    var nowDay = today.getDay();
 
-    // // document.write(nowDay)
-    // if(nowDay==5){
-    //     document.write("<img src="images/practice3.jpg" style= "width: 50%">");
-    // }else{
-    //         document.write('bye');
-    //     }
+    document.write(nowDay)
+    if(nowDay==6){
+        document.write('<img src="images/practice3.jpg">');
+    }else{
+            document.write('bye');
+        }
+
     // 왜안됨...ㅠㅠ
 
     // if(nowDay==1){
@@ -130,7 +131,7 @@
     //     document.write('<img src="images/practice5.jpg" alt="목요일" />');
     // }
     // else if(nowDay==5){
-    //     document.write('안녕 <img src="images/practice6.jpg"/>');
+    //     document.write('<img src="images/practice6.jpg"/>');
     // }
     // else if(nowDay==6){
     //     document.write('<img src="images/practice7.jpg" alt="토요일" />');
@@ -145,6 +146,23 @@
 // var maxNum = Math.max(30,70,5);
 // document.write("최댓값"+ maxNum +"<br/>");
 
-var imgNum = Math.floor(Math.random()*7)+2;
-document.write("<img src='images/practice"+imgNum+".jpg' alt='랜덤이미지'/>");
+// var minNum = Math.min(8,10,15);
+// document.write("최소값"+ minNum +"<br/>");
+
+// var roundNum = Math.round(3.5);
+// document.write("반올림"+ roundNum +"<br/>");
+
+// var ceilNum = Math.ceil(5.1);
+// document.write("소숫점올림"+ ceilNum +"<br/>");
+
+// var floorNum=Math.floor(10.5);
+// document.write("소숫점내림:"+floorNum+"<br />");
+
+// var absNum=Math.abs(-10);
+// document.write("절대값:"+absNum+"<br />");
+
+
+// 랜덤이미지 출력하기 practice.2-8사이의 이미지.
+// var imgNum = Math.floor(Math.random()*7)+2;
+// document.write("<img src='images/practice"+imgNum+".jpg' alt='랜덤이미지'/>");
 
