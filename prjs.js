@@ -226,8 +226,26 @@ document.write("단짝:"+result+"<br/>");
 //join("구분자")-구분자 기준으로 데이터를 합친다.
 var theProduct = ["냉장고", "컴퓨터","선풍기","밥솥","핸드폰"];
 var joinResult = theProduct.join("✅");
-document.write(joinResult);
+document.write(joinResult+"<br/>");
 
 
+//드디어 함수!!!
+//기본적인 함수의 정의와 호출
+function greet(){
+    alert("bye bye");
+}
 
+var num = 2;
+function nextGallery(){
+    num++
+    if(num>8) num=2;
+    document.getElementById("gallery").src="images/practice"+num+".jpg";
+    return false;
+}
+
+function prevGallery(){
+    num--
+    if(num<2) num=8;
+    document.getElementById("gallery").src="images/practice"+num+".jpg";
+}
 
