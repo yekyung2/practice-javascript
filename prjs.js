@@ -200,6 +200,33 @@ for(var i=0; i<theLen; i++){
 }
 document.write(total+"만원<br />");
 
+//reverse() 배열 데이터 역순 정렬
+var theFood=["사과","당근","고구마","호박"];
+theFood.reverse();
+console.log(theFood);
+document.write(theFood,"<br>");
+
+//sort() 배열 데이터 오름차순 정렬
+var theSubway=["2호선","9호선","7호선","4호선","3호선"];
+theSubway.sort();
+document.write(theSubway,"<br>");
+
+//concat() 배열된 데이터를 결합
+var Mountain1=["남산","도봉산","관악산","청계산"];
+var Mountain2=["설악산", "지리산"];
+var joinResult=Mountain1.concat(Mountain2);
+document.write(joinResult,"<br>");
+
+//slice(시작 인덱스, 마지막 인덱스)-원하는 데이터만 선택
+var theName =["준","설","산","조제","스쿠버"];
+// var result=theName.slice(2,4)
+var result=theName.slice(0,2)
+document.write("단짝:"+result+"<br/>");
+
+//join("구분자")-구분자 기준으로 데이터를 합친다.
+var theProduct = ["냉장고", "컴퓨터","선풍기","밥솥","핸드폰"];
+var joinResult = theProduct.join("✅");
+document.write(joinResult);
 
 
 
