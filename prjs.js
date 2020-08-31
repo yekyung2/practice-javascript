@@ -231,9 +231,9 @@ document.write(joinResult+"<br/>");
 
 //드디어 함수!!!
 //기본적인 함수의 정의와 호출
-function greet(){
-    alert("bye bye");
-}
+// function greet(){
+//     alert("bye bye");
+// }
 
 var num = 2;
 function nextGallery(){
@@ -249,3 +249,8 @@ function prevGallery(){
     document.getElementById("gallery").src="images/practice"+num+".jpg";
 }
 
+
+// 함수 연습2
+function greet(theText){
+    alert(theText)
+}
