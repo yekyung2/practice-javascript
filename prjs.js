@@ -266,3 +266,12 @@ function theFnc(num2){
 
 var result=theFnc(40);
 document.write(result);
+
+//재귀 함수 호출
+var i=0;
+function theTest(){
+    i++;
+    document.write("안녕하세요" + i +"<br/>");
+    if(i<10)  theTest();
+}
+theTest();
