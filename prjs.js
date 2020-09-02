@@ -254,3 +254,15 @@ function prevGallery(){
 function greet(theText){
     alert(theText)
 }
+
+// retern 문
+var num1= 10;
+function theFnc(num2){
+    var sum = num1+num2;
+    var mul = num1*num2;
+
+    return sum;
+}
+
+var result=theFnc(40);
+document.write(result);
