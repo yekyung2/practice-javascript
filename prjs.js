@@ -296,3 +296,12 @@
 // speedCom.totInfo();
 
 //똑같이 따라했는데 안됨 ㅠㅠ
+
+function theFnc(){
+alert("Scuba lee");
+}
+
+window.onload=function(){
+    var myBtn = document.getElementById("btn1");
+    myBtn.onlick=theFnc;
+}
