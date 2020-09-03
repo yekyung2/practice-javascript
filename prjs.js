@@ -289,7 +289,7 @@ this.totInfo = function(){      //객체 메서드 - 사양에 대한 정보를 
     }
 }
 
-const speedCom = new comFactory("2GH", "2GB", "1TB"); //2. 객체생성
+var speedCom = new comFactory("2GH", "2GB", "1TB"); //2. 객체생성
 document.write(speedCom.cpu+"<br/>");
 document.write(speedCom.ram+"<br/>");
 
