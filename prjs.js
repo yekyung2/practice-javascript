@@ -303,5 +303,5 @@ alert("Scuba lee");
 
 window.onload=function(){
     var myBtn = document.getElementById("btn1");
-    myBtn.onlick=theFnc;
+    myBtn.onlick=theFnc();
 }
