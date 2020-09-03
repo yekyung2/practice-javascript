@@ -186,47 +186,47 @@
 
 
 // 연습16 Array 객체 생성 방법 (서랍장, 하나의 변수에 여러개의 데이터를 저장하는 방법)
-var days = ["일", "월", "화", "수", "목", "금", "토"];
-var today = new Date();
-var day= days[today.getDay()];
-document.write(day+"요일"+"<br />");
+// var days = ["일", "월", "화", "수", "목", "금", "토"];
+// var today = new Date();
+// var day= days[today.getDay()];
+// document.write(day+"요일"+"<br />");
 
 // 전체 재산의 합 구하기
-var money=[100,200,300,400];
-var theLen = money.length;
-var total = 0;
-for(var i=0; i<theLen; i++){
-    total = total + money[i];
-}
-document.write(total+"만원<br />");
+// var money=[100,200,300,400];
+// var theLen = money.length;
+// var total = 0;
+// for(var i=0; i<theLen; i++){
+//     total = total + money[i];
+// }
+// document.write(total+"만원<br />");
 
 //reverse() 배열 데이터 역순 정렬
-var theFood=["사과","당근","고구마","호박"];
-theFood.reverse();
-console.log(theFood);
-document.write(theFood,"<br>");
+// var theFood=["사과","당근","고구마","호박"];
+// theFood.reverse();
+// console.log(theFood);
+// document.write(theFood,"<br>");
 
 //sort() 배열 데이터 오름차순 정렬
-var theSubway=["2호선","9호선","7호선","4호선","3호선"];
-theSubway.sort();
-document.write(theSubway,"<br>");
+// var theSubway=["2호선","9호선","7호선","4호선","3호선"];
+// theSubway.sort();
+// document.write(theSubway,"<br>");
 
 //concat() 배열된 데이터를 결합
-var Mountain1=["남산","도봉산","관악산","청계산"];
-var Mountain2=["설악산", "지리산"];
-var joinResult=Mountain1.concat(Mountain2);
-document.write(joinResult,"<br>");
+// var Mountain1=["남산","도봉산","관악산","청계산"];
+// var Mountain2=["설악산", "지리산"];
+// var joinResult=Mountain1.concat(Mountain2);
+// document.write(joinResult,"<br>");
 
 //slice(시작 인덱스, 마지막 인덱스)-원하는 데이터만 선택
-var theName =["준","설","산","조제","스쿠버"];
+// var theName =["준","설","산","조제","스쿠버"];
 // var result=theName.slice(2,4)
-var result=theName.slice(0,2)
-document.write("단짝:"+result+"<br/>");
+// var result=theName.slice(0,2)
+// document.write("단짝:"+result+"<br/>");
 
 //join("구분자")-구분자 기준으로 데이터를 합친다.
-var theProduct = ["냉장고", "컴퓨터","선풍기","밥솥","핸드폰"];
-var joinResult = theProduct.join("✅");
-document.write(joinResult+"<br/>");
+// var theProduct = ["냉장고", "컴퓨터","선풍기","밥솥","핸드폰"];
+// var joinResult = theProduct.join("✅");
+// document.write(joinResult+"<br/>");
 
 
 //드디어 함수!!!
@@ -235,44 +235,62 @@ document.write(joinResult+"<br/>");
 //     alert("bye bye");
 // }
 
-var num = 2;
-function nextGallery(){
-    num++
-    if(num>8) num=2;
-    document.getElementById("gallery").src="images/practice"+num+".jpg";
-    return false;
-}
+// var num = 2;
+// function nextGallery(){
+//     num++
+//     if(num>8) num=2;
+//     document.getElementById("gallery").src="images/practice"+num+".jpg";
+//     return false;
+// }
 
-function prevGallery(){
-    num--
-    if(num<2) num=8;
-    document.getElementById("gallery").src="images/practice"+num+".jpg";
-}
+// function prevGallery(){
+//     num--
+//     if(num<2) num=8;
+//     document.getElementById("gallery").src="images/practice"+num+".jpg";
+// }
 
 
 // 함수 연습2
-function greet(theText){
-    alert(theText)
-}
+// function greet(theText){
+//     alert(theText)
+// }
 
 // retern 문
-var num1= 10;
-function theFnc(num2){
-    var sum = num1+num2;
-    var mul = num1*num2;
+// var num1= 10;
+// function theFnc(num2){
+//     var sum = num1+num2;
+//     var mul = num1*num2;
 
-    return sum;
-}
+//     return sum;
+// }
 
-var result=theFnc(40);
-document.write(result);
+// var result=theFnc(40);
+// document.write(result);
 
 //재귀 함수 호출_ 함수의 실행문에 자기 함수를 호출하는 실행문이 포함되어 있음. 
-var i=0;
-function theTest(){
-    i++;
-    document.write("안녕하세요" + i +"<br/>");
-    if(i<10)  theTest();
-}
-theTest();
+// var i=0;
+// function theTest(){
+//     i++;
+//     document.write("안녕하세요" + i +"<br/>");
+//     if(i<10)  theTest();
+// }
+// theTest();
 
+//생성자 함수
+function comFactory(cupInfo,ramInfo,hddInfo){  //1. 생성자 함수 - 컴퓨터를 생산하는 공장
+    this.cpu=cpuInfo;     //'cpu' 속성 - 컴퓨터 모델명/색상/크기
+    this.ram=ramInfo;       //'ram'속성  - 컴퓨터 모델명/색상/크기
+    this.hdd=hddInfo;       //'hdd'속성 - 컴퓨터/모델명/색상/크기
+
+
+this.totInfo = function(){      //객체 메서드 - 사양에 대한 정보를 제공한다. 
+    document.write("제조업체:한국전자 <br/>");
+    document.write("시스템종류:64비트 운영체제 <br/>");
+    }
+}
+
+const speedCom = new comFactory("2GH", "2GB", "1TB"); //2. 객체생성
+document.write(speedCom.cpu+"<br/>");
+document.write(speedCom.ram+"<br/>");
+
+speedCom.totInfo();
