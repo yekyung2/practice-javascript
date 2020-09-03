@@ -277,20 +277,22 @@
 // theTest();
 
 //생성자 함수
-function comFactory(cupInfo,ramInfo,hddInfo){  //1. 생성자 함수 - 컴퓨터를 생산하는 공장
-    this.cpu=cpuInfo;     //'cpu' 속성 - 컴퓨터 모델명/색상/크기
-    this.ram=ramInfo;       //'ram'속성  - 컴퓨터 모델명/색상/크기
-    this.hdd=hddInfo;       //'hdd'속성 - 컴퓨터/모델명/색상/크기
+// function comFactory(cupInfo,ramInfo,hddInfo){  //1. 생성자 함수 - 컴퓨터를 생산하는 공장
+//     this.cpu=cpuInfo;     //'cpu' 속성 - 컴퓨터 모델명/색상/크기
+//     this.ram=ramInfo;       //'ram'속성  - 컴퓨터 모델명/색상/크기
+//     this.hdd=hddInfo;       //'hdd'속성 - 컴퓨터/모델명/색상/크기
 
 
-this.totInfo = function(){      //객체 메서드 - 사양에 대한 정보를 제공한다. 
-    document.write("제조업체:한국전자 <br/>");
-    document.write("시스템종류:64비트 운영체제 <br/>");
-    }
-}
+// this.totInfo = function(){      //객체 메서드 - 사양에 대한 정보를 제공한다. 
+//     document.write("제조업체:한국전자 <br/>");
+//     document.write("시스템종류:64비트 운영체제 <br/>");
+//     }
+// }
 
-var speedCom = new comFactory("2GH", "2GB", "1TB"); //2. 객체생성
-document.write(speedCom.cpu+"<br/>");
-document.write(speedCom.ram+"<br/>");
+// var speedCom = new comFactory("2GH", "2GB", "1TB"); //2. 객체생성
+// document.write(speedCom.cpu+"<br/>");
+// document.write(speedCom.ram+"<br/>");
 
-speedCom.totInfo();
+// speedCom.totInfo();
+
+//똑같이 따라했는데 안됨 ㅠㅠ
