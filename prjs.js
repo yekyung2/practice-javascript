@@ -297,11 +297,17 @@
 
 //똑같이 따라했는데 안됨 ㅠㅠ
 
-function theFnc(){
-alert("Scuba lee");
-}
+// function theFnc(){
+// alert("Scuba lee");
+// }
 
-window.onload=function(){
-    var myBtn = document.getElementById("btn1");
-    myBtn.onlick=theFnc();
-}
+// window.onload=function(){
+//     var myBtn = document.getElementById("btn1");
+//     myBtn.onlick=theFnc();
+// }
+
+
+//onlcik alert box
+function myFunction() {
+    alert("I am an alert box!");
+  }
