@@ -267,7 +267,7 @@ function theFnc(num2){
 var result=theFnc(40);
 document.write(result);
 
-//재귀 함수 호출
+//재귀 함수 호출_ 함수의 실행문에 자기 함수를 호출하는 실행문이 포함되어 있음. 
 var i=0;
 function theTest(){
     i++;
@@ -275,3 +275,4 @@ function theTest(){
     if(i<10)  theTest();
 }
 theTest();
+
