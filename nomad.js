@@ -11,5 +11,8 @@ title.style.color = "royalblue";
 console.dir(document); //콘솔창에 #document에 관련된 attributes 뜬다. 여기서 이름을 보고 수정가능!
 document.title = "Scuba Dive-In"
 
-
- 
+function handleReszie(event){
+    console.log(event);
+    // console.log("I have been resized")
+}
+ window.addEventListener("resize", handleReszie);
