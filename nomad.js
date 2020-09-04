@@ -1,4 +1,6 @@
-const title = document.getElementById("title");
+// const title = document.getElementById("title");
+const title = document.querySelector("#title");
+
 title.innerHTML= "Hi! From JS";
 // console.log(title);
 
