@@ -22,8 +22,19 @@ function handleClick(){
 }
  title.addEventListener("click", handleClick);
 
+
+ //if-else 개념
  if(10===5){
      console.log("hi");
- } else{
+ } else if(10 === "10"){
      console.log("ho");
+ } else{
+     console.log("lalala")
+ }
+
+//&&, || : and, or
+ if(20>5 || "nicolas" === "nicolas"){
+     console.log("yes");
+ } else{
+     console.log("no");
  }
