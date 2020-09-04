@@ -21,3 +21,9 @@ function handleClick(){
     title.style.color = "orange";
 }
  title.addEventListener("click", handleClick);
+
+ if(10===5){
+     console.log("hi");
+ } else{
+     console.log("ho");
+ }
