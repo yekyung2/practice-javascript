@@ -308,6 +308,12 @@
 
 
 //onlcik alert box
-function myFunction() {
-    alert("I am an alert box!");
-  }
+// function myFunction() {
+//     alert("I am an alert box!");
+//   }
+
+function theFnc(){
+  alert("javascript");
+}
+var myBtn=document.getElementById("btn1");
+myBtn.onclick=theFnc;

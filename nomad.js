@@ -1,7 +1,7 @@
 // const title = document.getElementById("title");
 const title = document.querySelector("#title");
 
-title.innerHTML= "Hi! From JS";
+title.innerHTML= "Scuba Dive-In";
 // console.log(title);
 
 console.dir(title); //콘솔창에 h1#title이 뜨고, 많은 attributes가 뜬다! 이렇게 다양한 속성값
@@ -63,7 +63,20 @@ function handleClick(){
 
 function init(){
     title.style.color = BASE_COLOR;
-    title.addEventListener("click", handleClick);
+    title.addEventListener("mouseenter", handleClick);
 }
 
 init();
+
+//모든 자바스크립트 이벤트 참조 https://developer.mozilla.org/ko/docs/Web/API/Event
+//javascirpt events DOM mdn 구글에 검색!
+
+function handleOffline(){
+    console.log("Byebye");
+}
+
+function handleOnline(){
+    console.log("Welcome back");
+}
+window.addEventListener("offline", handleOffline);
+window.addEventListener("online", handleOnline);
