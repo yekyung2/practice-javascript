@@ -48,25 +48,25 @@ document.title = "Scuba Dive-In"
 // }
 
 //클릭시 색깔 변환
-const BASE_COLOR = "royalblue";
-const OTHER_COLOR = "orange";
+// const BASE_COLOR = "royalblue";
+// const OTHER_COLOR = "orange";
 
-function handleClick(){
-    const currentColor = title.style.color;
-    if (currentColor === BASE_COLOR){
-        title.style.color = OTHER_COLOR;
-    }
-    else {
-        title.style.color = BASE_COLOR;  
-    }
-}
+// function handleClick(){
+//     const currentColor = title.style.color;
+//     if (currentColor === BASE_COLOR){
+//         title.style.color = OTHER_COLOR;
+//     }
+//     else {
+//         title.style.color = BASE_COLOR;  
+//     }
+// }
 
-function init(){
-    title.style.color = BASE_COLOR;
-    title.addEventListener("mouseenter", handleClick);
-}
+// function init(){
+//     title.style.color = BASE_COLOR;
+//     title.addEventListener("mouseenter", handleClick);
+// }
 
-init();
+// init();
 
 //모든 자바스크립트 이벤트 참조 https://developer.mozilla.org/ko/docs/Web/API/Event
 //javascirpt events DOM mdn 구글에 검색!
@@ -80,3 +80,15 @@ function handleOnline(){
 }
 window.addEventListener("offline", handleOffline);
 window.addEventListener("online", handleOnline);
+
+
+//간단버전
+// const title = document.querySelector('#title')
+const CLICKED_CLASS = 'clicked';
+function handleClick(){
+    title.classList.toggle(CLICKED_CLASS);
+}
+function init(){
+    title.addEventListener("click", handleClick);
+}
+init();
