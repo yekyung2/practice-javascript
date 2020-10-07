@@ -1,4 +1,4 @@
-h1 {
+h1, h4 {
     color: slategray;
 }
 html{
@@ -12,3 +12,17 @@ transition: cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 body{
     text-align: center;
+}
+
+::placeholder {
+    text-align: center;
+}
+
+.form, 
+.greetings {
+    display: none;
+}
+
+.showing{
+    display: block;
+}

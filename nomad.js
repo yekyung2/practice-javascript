@@ -89,6 +89,6 @@ function handleClick(){
     title.classList.toggle(CLICKED_CLASS);
 }
 function init(){
-    title.addEventListener("click", handleClick);
+    title.addEventListener("mouseover", handleClick);
 }
 init();
