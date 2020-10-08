@@ -24,7 +24,7 @@ class Person{
         this.second = second;
     }
     sum(){
-        return 'prototype :'+(this.first+this.second);
+        return this.first+this.second;
     }
 }
 
@@ -49,12 +49,19 @@ class Person{
 
 //중복 없애기
 class PersonPlus extends Person{
+    constructor(name, first, second, third){
+        super(name, first, second);
+        this.third = third;
+    }
+    sum(){
+        return super.sum()+this.third;
+    }
     avg(){
-        return (this.first+this.second)/2;
+        return (this.first+this.second+this.third)/3;
     }
 }
 
-const kim = new PersonPlus('kim', 10, 20);
+const kim = new PersonPlus('kim', 10, 20, 30);
 console.log(kim.name);
-console.log(kim.avg());
 console.log(kim.sum());
+console.log(kim.avg());
