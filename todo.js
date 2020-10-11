@@ -3,12 +3,24 @@ const toDoForm = document.querySelector(".js-toDoForm"),
     toDoList = document.querySelector(".js-toDoList");
 
 const TODOS_LS = 'toDos';
-const toDos = [];
+let toDos = [];
 
+
+//리스트 제거하기 delete child element MDN 검색하기
 function deleteToDo(event){
     // console.dir(event.target); 부모를 가리키는 키워드를 콘솙창에서 찾기 위해
-    console.log(event.target.parentNode);
+    // console.log(event.target.parentNode);
+    
+    const btn = event.target;
+    const li = btn.parentNode;
+    toDoList.removeChild(li);
+    const cleanToDos = toDos.filter(function(toDo){
+        return toDo.id !== parseInt(li.id);
+    });
+    toDos = cleanToDos
+    saveToDos();
 }
+
 function saveToDos(){
     localStorage.setItem(TODOS_LS, JSON.stringify(toDos));
 }
@@ -18,7 +30,7 @@ function paintToDo(text){
     const delBtn = document.createElement("button");
     const span = document.createElement("span");
     const newId = toDos.length +1;
-    delBtn.innerHTML = "💎";
+    delBtn.innerHTML = "✅";
     delBtn.addEventListener("click", deleteToDo);
     span.innerText = text;
     li.appendChild(span);
