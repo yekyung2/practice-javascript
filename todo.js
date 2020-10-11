@@ -39,13 +39,14 @@ function handleSubmit(event){
 
 function loadToDos(){
     const toDos = localStorage.getItem(TODOS_LS);
-    if(toDos !== null){
-
+    if(toDos !== null){ 
+        console.log(toDos);
     }
 }
+
 function init(){
     loadToDos();
-    toDoForm.addEventListener("submit", handleSubmit)
+    toDoForm.addEventListener("submit", handleSubmit);
 }
 
 init();
