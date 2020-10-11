@@ -38,9 +38,11 @@ function handleSubmit(event){
 }
 
 function loadToDos(){
-    const toDos = localStorage.getItem(TODOS_LS);
+    const loadedToDos = localStorage.getItem(TODOS_LS);
     if(toDos !== null){ 
-        console.log(toDos);
+        console.log(loadedToDos)
+        const parsedToDos = JSON.parse(loadedToDos);
+        console.log(parsedToDos);   
     }
 }
 
