@@ -8,15 +8,17 @@ const toDos = [];
 function paintToDo(text){
     const li = document.createElement("li");
     const delBtn = document.createElement("button");
-    delBtn.innerHTML = "✓";
     const span = document.createElement("span");
+    const newId = toDos.length +1;
+    delBtn.innerHTML = "✓";
     span.innerText = text;
     li.appendChild(span);
     li.appendChild(delBtn);
+    li.id = newId;
     toDoList.appendChild(li);
     const toDoObj = {
         text: text,
-        id: toDos.length + 1
+        id: newId
     };
     toDos.push(toDoObj);
 
@@ -26,7 +28,8 @@ function handleSubmit(event){
     event.preventDefault();
     const currentValue = toDoInput.value;
     paintToDo(currentValue);
-    toDoInput.value = "";    
+    toDoInput.value = ""; 
+       
 }
 
 function loadToDos(){
