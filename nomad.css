@@ -40,8 +40,9 @@ li{
 }
 
 ul button{
-    background-color: black;
+    background-color: transparent;
+    border-color:  transparent;
     outline-style: none;
     font-size:20px;
-    border-color: black;
+    
 }
