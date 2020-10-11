@@ -30,7 +30,18 @@ body{
     display: block;
 }
 
+
 li{
     color: white;
+}
+.js-toDoList{
+    display: table;
+    margin: 0 auto;
+}
 
+ul button{
+    background-color: black;
+    outline-style: none;
+    font-size:20px;
+    border-color: black;
 }

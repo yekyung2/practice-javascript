@@ -14,7 +14,7 @@ function paintToDo(text){
     const delBtn = document.createElement("button");
     const span = document.createElement("span");
     const newId = toDos.length +1;
-    delBtn.innerHTML = "✓";
+    delBtn.innerHTML = "💎";
     span.innerText = text;
     li.appendChild(span);
     li.appendChild(delBtn);
@@ -40,9 +40,12 @@ function handleSubmit(event){
 function loadToDos(){
     const loadedToDos = localStorage.getItem(TODOS_LS);
     if(toDos !== null){ 
-        console.log(loadedToDos)
+        
         const parsedToDos = JSON.parse(loadedToDos);
-        console.log(parsedToDos);   
+        console.log(parsedToDos); 
+        parsedToDos.forEach(function(toDo){
+            paintToDo(toDo.text);
+        });  
     }
 }
 
