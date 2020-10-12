@@ -6,7 +6,7 @@ h1{
     font-weight: bold;
 }
 h3 {
-    color: dodgerblue;
+    color: white;
 }
 html{
 background-color: black;
@@ -53,5 +53,13 @@ ul button{
     border-color:  transparent;
     outline-style: none;
     font-size:20px;
+    
+}
+
+.whole{
+    position: relative;
+    margin: auto;
+    margin-top: 15%;
+    width: 50%;
     
 }

@@ -1,7 +1,7 @@
 // const title = document.getElementById("title");
 const title = document.querySelector("#title");
 
-title.innerHTML= "It's Time to Dive-In";
+title.innerHTML= "Hey, It's Time to Dive-In!";
 // console.log(title);
 
 console.dir(title); //콘솔창에 h1#title이 뜨고, 많은 attributes가 뜬다! 이렇게 다양한 속성값
