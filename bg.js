@@ -1,11 +1,14 @@
 const body = document.querySelector("body");
 
-const IMG_NUMBER = 10;
+const IMG_NUMBER = 8;
+
 
 function paintImage(imgNumber){
     const image = new Image();
     image.src = `./nomad/${imgNumber + 1}.jpg`
-    body.appendChild(image)
+    image.classList.add('bgImage');
+    body.prepend(image);
+
 }
 function genRandom(){
     const number = Math.floor(Math.random() * IMG_NUMBER);
